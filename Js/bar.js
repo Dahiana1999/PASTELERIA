@@ -1,5 +1,5 @@
 //*menu hamburguesa*//
-const nav = document.querySelector(".nav-menu-item");
+const nav = document.querySelector(".nav-menu");
 const abrir = document.querySelector(".abrir");
 const cerrar = document.querySelector(".cerrar");
 
