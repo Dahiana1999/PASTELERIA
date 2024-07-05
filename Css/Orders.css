@@ -114,3 +114,5 @@ li p {
   width: 100%;
   height: 500px;
 }
+
+@media screen and (max-width: 550px) {}

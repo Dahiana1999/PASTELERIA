@@ -4,8 +4,7 @@ const abrir = document.querySelector(".abrir");
 const cerrar = document.querySelector(".cerrar");
 
 abrir.addEventListener("click", ()=>{
-   getElementsByClassName
-    .add("visible");
+   nav.classList.add("visible");
 }) 
 
 cerrar.addEventListener("click", ()=>{
