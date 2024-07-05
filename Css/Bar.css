@@ -3,9 +3,8 @@
   font-family: Margarine;
 }
 
-body {
-  background-color: rgb(192, 149, 122);
-}
+body{
+  background-color: #fcc28f;}
 
 .header {
   background-color: #fcc28f;
@@ -13,6 +12,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  position: fixed;
+  
 }
 
 .nav-logo {
@@ -39,6 +40,7 @@ body {
   justify-content: space-between;
   max-width: 100%;
   margin: 0 auto;
+  
 }
 
 .nav-link {
@@ -76,4 +78,56 @@ body {
 .nav-menu-link_active {
   background-color: #cf6b14;;
   transition: 0.5s;
+}
+.abrir,
+.cerrar {
+  display: none;
+
+}
+
+@media screen and (max-width: 550px) {
+  .abrir,
+  .cerrar {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+  }
+
+  .abrir{
+    color: black;
+  }
+  .cerrar{
+    color: aliceblue;
+  }
+  .nav-menu {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(235, 199, 151);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: end;
+    background-color: rgb(235, 199, 151);
+  }
+  .nav-menu .nav-menu-item{
+    color: rgb(0, 0, 0);
+  }
 }

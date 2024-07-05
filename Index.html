@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./Css/Bar.css" />
     <link rel="stylesheet" type="text/css" href="./Css/Fonts.css" />
     <link rel="stylesheet" type="text/css" href="./Css/Orders.css" />
-    <link rel="stylesheet" type="text/css" href="./Css/Video.css" />
+    <link rel="stylesheet" type="text/css" href="./Css/Section-Img.css" />
     <link rel="stylesheet" type="text/css" href="./Css/Footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,10 +25,12 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <img src="./Img/logo.png" alt="logo" class="nav-logo" />
         <a href="#" class="title">Pasteleria Tanjiro</a>
+        <button class="abrir"><i class="fa-solid fa-bars"></i></button>
         <div class="nav-menu">
+          <button class="cerrar"><i class="fa-solid fa-x"></i></button>
           <li class="nav-menu-item">
             <a href="#" class="nav-menu-link nav-link">Inicio</a>
           </li>
@@ -65,8 +67,58 @@
         </div>
       </section>
     </main>
-    <div class="video"></div>
-    <footer class="footer"></footer>
+    <section class="section__img">
+      <div class="section_img">
+        <img src="./Img/boda.jpg" alt="logo" class="img3" />
+        <div class="section__text">
+          <h2>Insumos para reposteros</h2>
+          <p class="Paragraph">
+            ¡Siempre buscando brindar la mejor atención y los mejores precios
+            para que te asegures tus<br />ganancias! ¡Realizá tu pedido y recibí
+            tu compra en la puerta de tu casa en cualquier parte del país!
+            <br />
+            El costo del envío te aseguramos que compensará el beneficio del
+            precio y calidad.
+          </p>
+          <button class="btn2">
+            Ver más <i class="fa fa-heart" aria-hidden="true"></i>
+          </button>
+        </div>
+        <img src="./Img/decorando.jpg" alt="logo" class="img4" />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <h3 class="follow">
+          Siguenos
+          <a href="https://www.facebook.com" target="_blank"
+            ><i id="facebook" class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            ><i id="instagram" class="fa-brands fa-instagram"></i
+          ></a>
+        </h3>
+        <h4 class="subscribe">
+          <p>Subscríbete a nuestros e-mails para recibir ofertas:</p>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <button class="btn3">Suscribirme <i class="fa fa-heart" aria-hidden="true"></i></button>
+        </h4>
+      </div>
+      <div class="footer-container2">
+      <p class="copyright">
+        © 2024 Pasteleria Tanjiro. Todos los derechos reservados.
+      </p>
+      <p class="github">
+        Diseñado por:
+        <a href="https://github.com/Dahiana1999"
+          ><i class="fa-brands fa-github"></i> Dahiana Machado</a
+        >
+      </p>
+    </div>
+    </footer>
     <script src="./Js/script.js"></script>
+    <script src="./Js/bar.js"></script>
   </body>
 </html>

@@ -1,13 +1,11 @@
 main {
+  gap: 20px 10px;
+  margin-top: 0px;
+  height: auto;
   margin: 0;
-  padding: 0;
-  width: 35%;
-  margin: 10px auto 30px;
-  padding: 50px 40px 85px;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  padding: 0; 
+  background-color: #fcc28f;
+  margin-bottom: 100px;
 }
 .container {
   text-align: center;
@@ -15,7 +13,6 @@ main {
   align-items: center;
   padding: 50px;
   height: 200px;
-  background-color: rgb(192, 149, 122);
   border-radius: 10px;
   color: rgb(52, 0, 100);
 }
@@ -24,10 +21,14 @@ h1 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 70px;
-  color: #e4dede;
+  color: #fffdfd;
 }
 .input__container {
   padding-top: 20px;
+}
+.respuesta {
+  display: flex;
+  justify-content: center;
 }
 .inputAdd {
   width: 280px;
@@ -49,6 +50,11 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
 } /*boton de agregar*/
+
+.btn-add:hover {
+  background-color: rgb(140, 69, 47);
+  color: aliceblue;
+}
 
 #lista {
   list-style: none;
