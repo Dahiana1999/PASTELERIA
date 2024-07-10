@@ -15,6 +15,9 @@ addBtn.addEventListener("click", (e) => {
     const li = document.createElement("li");
     li.className = "list";
     const p = document.createElement("p");
+
+    
+
     /*se crea el checkbox para marcar las tareas*/
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -26,6 +29,7 @@ addBtn.addEventListener("click", (e) => {
       } else {
         p.style.textDecoration = "none";
       }
+
     });
     /*fin de la parte del check*/
 
@@ -36,8 +40,12 @@ addBtn.addEventListener("click", (e) => {
     ul.appendChild(li);
 
     input.value = "";
+
+    saveData();
   }
 });
+
+
 
 /*funcion del boton de borrar*/
 function addDeleteBtn() {
@@ -53,11 +61,18 @@ function addDeleteBtn() {
   return deleteBtn;
 }
 
-/*function saveData() {
-  localStorage.setItem("data", lista.innerHTML);
+function saveData() {
+  localStorage.setItem("data", ul.innerHTML);
 }
-/*function showTask() {
-  lista.innerHTML = localStorage.getItem("data");
- 
+function showTask() {
+  ul.innerHTML = localStorage.getItem("data");
+
+  ul.addEventListener("click", (e) => {
+    if (e.target.tagName === "BUTTON") {
+      e.target.parentElement.remove();
+      saveData();
+    }
+  });
 }
-showTask()*/
+showTask();
+
